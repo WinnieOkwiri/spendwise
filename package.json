@@ -1,0 +1,7 @@
+{
+  "name": "spendwise",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "start cmd /k \"cd /d C:\\Users\\USER\\spendwise\\server && C:\\\"Program Files\"\\nodejs\\node.exe node_modules\\ts-node\\dist\\bin.js src/index.ts\" && start cmd /k \"cd /d C:\\Users\\USER\\spendwise\\client && C:\\\"Program Files\"\\nodejs\\node.exe node_modules\\vite\\bin\\vite.js\""
+  }
+}

@@ -1,0 +1,144 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.header { margin-bottom: 24px; }
+.header h1 { font-size: 28px; color: #1a1a2e; }
+.header p { color: #888; font-size: 14px; }
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.card-label { font-size: 13px; color: #888; }
+.card-value { font-size: 28px; font-weight: 600; color: #1a1a2e; }
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: #1a1a2e; }
+
+.category-bars { display: flex; flex-direction: column; gap: 12px; }
+
+.category-bar-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 140px;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-name { font-size: 13px; color: #555; }
+
+.bar-track {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.category-amount { font-size: 13px; color: #333; text-align: right; }
+.over-budget { color: #e53e3e; font-weight: 600; }
+
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 10px;
+}
+
+.form input, .form select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form input:focus, .form select:focus {
+  border-color: #1a1a2e;
+}
+
+.form button {
+  padding: 10px 20px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form button:hover { background: #2d2d4e; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th {
+  text-align: left;
+  font-size: 12px;
+  color: #888;
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafafa; }
+
+.category-pill {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.delete-btn {
+  padding: 4px 12px;
+  background: white;
+  color: #e53e3e;
+  border: 1px solid #e53e3e;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover { background: #fff5f5; }
